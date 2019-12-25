@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example."
+    android:background="#eeeeee"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_setmessageprompt_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/color_minefragment_top"
+        >
+
+        <ImageView
+            android:id="@+id/iv_setmessageprompt_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_left_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:id="@+id/tv_setmessageprompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置信息提示级别"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/iv_setmessageprompt_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <LinearLayout
+        android:id="@+id/ll_setmessageprompt_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/rl_setmessageprompt_top"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/level1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一级"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/level2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二级"/>
+
+            <RadioButton
+                android:id="@+id/level3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="三级"/>
+
+            <RadioButton
+                android:id="@+id/level4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="四级"/>
+
+        </RadioGroup>
+
+        <!-- 保存按钮 -->
+        <Button
+            android:id="@+id/bt_setmessageprompt_save"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/selector_loginactivity_button"
+            android:textColor="#fff"
+            android:text="保存"
+            android:onClick="onClick"
+            android:layout_marginTop="30dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
