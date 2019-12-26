@@ -7,7 +7,7 @@ import android.os.Vibrator;
 import android.telephony.SmsManager;
 import android.text.TextUtils;
 import android.util.Log;
-import com.example.ihelp.EmergencySMS.Model.LocationService;
+
 import com.example.ihelp.EmergencySMS.Model.PressCounter;
 import com.example.ihelp.Setting.Model.EmergencyContent;
 import java.util.ArrayList;
